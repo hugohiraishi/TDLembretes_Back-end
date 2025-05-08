@@ -1,0 +1,408 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\controllers\\criartarefapersonalizadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\controllers\\criartarefapersonalizadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\controllers\\criartarefaoficialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\controllers\\criartarefaoficialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\dto\\atualizartarefapersonalizadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\dto\\atualizartarefapersonalizadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\repositories\\tarefaoficialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\repositories\\tarefaoficialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\services\\tarefapersonalizadaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\services\\tarefapersonalizadaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\repositories\\tarefapersonalizadarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\repositories\\tarefapersonalizadarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\services\\tarefaoficialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\services\\tarefaoficialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\corsextenions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\corsextenions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\models\\tarefaoficial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\models\\tarefaoficial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\dto\\atualizartarefaoficialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\dto\\atualizartarefaoficialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\dto\\tarefapersonalizadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\dto\\tarefapersonalizadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\dto\\tarefaoficialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\dto\\tarefaoficialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\repositories\\data\\tdldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\repositories\\data\\tdldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\models\\usuariotarefasoficiais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\models\\usuariotarefasoficiais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|c:\\users\\hugoy\\onedrive\\\u00E1rea de trabalho\\tdlembretes\\tdlembretes\\repositories\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7D8E7A0-B69A-4C25-A011-F4E3F6F625EE}|TDLembretes\\TDLembretes.csproj|solutionrelative:tdlembretes\\repositories\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TarefaOficial.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\TarefaOficial.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Models\\TarefaOficial.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\TarefaOficial.cs",
+              "RelativeToolTip": "TDLembretes\\Models\\TarefaOficial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:52:22.549Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CriarTarefaOficialController.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\CriarTarefaOficialController.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Controllers\\CriarTarefaOficialController.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\CriarTarefaOficialController.cs",
+              "RelativeToolTip": "TDLembretes\\Controllers\\CriarTarefaOficialController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:10:44.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "TDLembretes\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:30:21.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Program.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Program.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Program.cs",
+              "RelativeToolTip": "TDLembretes\\Program.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAwwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:41:25.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CriarTarefaPersonalizadaController.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\CriarTarefaPersonalizadaController.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Controllers\\CriarTarefaPersonalizadaController.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\CriarTarefaPersonalizadaController.cs",
+              "RelativeToolTip": "TDLembretes\\Controllers\\CriarTarefaPersonalizadaController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:47:50.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "TDLembretes\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:49:37.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "TDLembretes\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:22:25.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AtualizarTarefaPersonalizadaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\AtualizarTarefaPersonalizadaDTO.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\DTO\\AtualizarTarefaPersonalizadaDTO.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\AtualizarTarefaPersonalizadaDTO.cs",
+              "RelativeToolTip": "TDLembretes\\DTO\\AtualizarTarefaPersonalizadaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T06:23:37.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "TDLembretes\\DTO\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:16:35.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TarefaOficialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\TarefaOficialRepository.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Repositories\\TarefaOficialRepository.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\TarefaOficialRepository.cs",
+              "RelativeToolTip": "TDLembretes\\Repositories\\TarefaOficialRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA4wBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:46:41.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TarefaPersonalizadaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\TarefaPersonalizadaRepository.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Repositories\\TarefaPersonalizadaRepository.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\TarefaPersonalizadaRepository.cs",
+              "RelativeToolTip": "TDLembretes\\Repositories\\TarefaPersonalizadaRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAzwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:23:48.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TarefaPersonalizadaService.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TarefaPersonalizadaService.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Services\\TarefaPersonalizadaService.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TarefaPersonalizadaService.cs",
+              "RelativeToolTip": "TDLembretes\\Services\\TarefaPersonalizadaService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwDQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:39:54.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TarefaOficialService.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TarefaOficialService.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Services\\TarefaOficialService.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TarefaOficialService.cs",
+              "RelativeToolTip": "TDLembretes\\Services\\TarefaOficialService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwCcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:53:25.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\TokenService.cs",
+              "RelativeToolTip": "TDLembretes\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:02:24.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\Usuario.cs",
+              "RelativeToolTip": "TDLembretes\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:32:06.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CorsExtenions.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\CorsExtenions.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\CorsExtenions.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\CorsExtenions.cs",
+              "RelativeToolTip": "TDLembretes\\CorsExtenions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:39:00.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Services\\AuthService.cs",
+              "RelativeToolTip": "TDLembretes\\Services\\AuthService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T04:07:52.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TDLembretes\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:44:11.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AtualizarTarefaOficialDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\AtualizarTarefaOficialDTO.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\DTO\\AtualizarTarefaOficialDTO.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\AtualizarTarefaOficialDTO.cs",
+              "RelativeToolTip": "TDLembretes\\DTO\\AtualizarTarefaOficialDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T06:13:08.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TarefaPersonalizadaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\TarefaPersonalizadaDTO.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\DTO\\TarefaPersonalizadaDTO.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\TarefaPersonalizadaDTO.cs",
+              "RelativeToolTip": "TDLembretes\\DTO\\TarefaPersonalizadaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:37:36.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TarefaOficialDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\TarefaOficialDTO.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\DTO\\TarefaOficialDTO.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\DTO\\TarefaOficialDTO.cs",
+              "RelativeToolTip": "TDLembretes\\DTO\\TarefaOficialDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:59:57.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "tdlDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\Data\\tdlDbContext.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Repositories\\Data\\tdlDbContext.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\Data\\tdlDbContext.cs",
+              "RelativeToolTip": "TDLembretes\\Repositories\\Data\\tdlDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:55:40.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsuarioTarefasOficiais.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\UsuarioTarefasOficiais.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Models\\UsuarioTarefasOficiais.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Models\\UsuarioTarefasOficiais.cs",
+              "RelativeToolTip": "TDLembretes\\Models\\UsuarioTarefasOficiais.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T20:32:40.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "TDLembretes\\Repositories\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\hugoy\\OneDrive\\\u00C1rea de Trabalho\\TDLembretes\\TDLembretes\\Repositories\\Data\\SeedData.cs",
+              "RelativeToolTip": "TDLembretes\\Repositories\\Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:25:24.552Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
