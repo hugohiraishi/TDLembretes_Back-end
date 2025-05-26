@@ -1,0 +1,27 @@
+# Ignore arquivos temporários do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build
+bin/
+obj/
+
+# Arquivos de cache
+*.cache
+*.log
+*.vsidx
+
+# Arquivos do sistema
+Thumbs.db
+.DS_Store
+
+# Configurações específicas de IDE
+*.userosscache
+*.sln.docstates
+
+# Backup do Visual Studio
+*.bak
+
+# Pasta de pacotes
+packages/

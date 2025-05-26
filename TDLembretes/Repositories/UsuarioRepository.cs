@@ -19,6 +19,12 @@ namespace TDLembretes.Repositories
             return await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == usuarioId);
         }
 
+        public async Task<List<Usuario>> GetTodosUsuarios()
+        {
+            return await _context.Usuarios.ToListAsync();
+        }
+
+
         public async Task AtualizarUsuario(Usuario usuario)
         {
             _context.Usuarios.Update(usuario);

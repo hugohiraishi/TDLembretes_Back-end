@@ -119,7 +119,6 @@ C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\bin\Debug\net8.0\Swashbuckle
 C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\obj\Debug\net8.0\TDLembretes.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\hugoy\Desktop\TDLembretes\TDLembretes\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\hugoy\Desktop\TDLembretes\TDLembretes\bin\Debug\net8.0\appsettings.json
 C:\Users\hugoy\Desktop\TDLembretes\TDLembretes\bin\Debug\net8.0\TDLembretes.staticwebassets.endpoints.json
@@ -364,3 +363,5 @@ C:\Users\hugoy\OneDrive\Área de Trabalho\TDLembretes\TDLembretes\obj\Debug\net8
 C:\Users\hugoy\OneDrive\Área de Trabalho\TDLembretes\TDLembretes\obj\Debug\net8.0\TDLembretes.pdb
 C:\Users\hugoy\OneDrive\Área de Trabalho\TDLembretes\TDLembretes\obj\Debug\net8.0\TDLembretes.genruntimeconfig.cache
 C:\Users\hugoy\OneDrive\Área de Trabalho\TDLembretes\TDLembretes\obj\Debug\net8.0\ref\TDLembretes.dll
+C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\obj\Debug\net8.0\TDLembretes.sourcelink.json
+C:\Users\hugoy\source\repos\TDLembretes\TDLembretes\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -37,7 +37,8 @@ namespace TDLembretes.Services
                 {
             new Claim(ClaimTypes.Name, usuario.Nome),
             new Claim(ClaimTypes.Email, usuario.Email),
-            new Claim("id", usuario.Id.ToString()),
+            new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+            //new Claim("id", usuario.Id.ToString()),
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

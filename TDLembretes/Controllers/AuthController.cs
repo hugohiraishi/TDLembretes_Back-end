@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TDLembretes.Services;
-using TDLembretes.DTO;
 using TDLembretes.Models;
+using TDLembretes.DTO.Usuarios;
 
 namespace TDLembretes.Controllers
 {
@@ -51,11 +51,11 @@ namespace TDLembretes.Controllers
 
 
         [HttpPost("register")]
-        public async Task<ActionResult<string>> Register(UsuarioDTO usuarioCadastroDTO)
+        public async Task<ActionResult<string>> Register(UsuarioRegisterDTO dto)
         {
             try
             {
-                var usuario = await _authService.Register(usuarioCadastroDTO.Nome, usuarioCadastroDTO.Email, usuarioCadastroDTO.Senha, usuarioCadastroDTO.Telefone);
+                var usuario = await _authService.Register(dto.Nome, dto.Email, dto.Senha, dto.Telefone);
 
                 return Ok(new { Message = "Usuário cadastrado com sucesso!" });
             }

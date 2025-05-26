@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\TDLembretes.csproj": {}
+    "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\TDLembretes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\TDLembretes.csproj": {
+    "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\TDLembretes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
+        "projectUniqueName": "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
         "projectName": "TDLembretes",
-        "projectPath": "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
+        "projectPath": "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
         "packagesPath": "C:\\Users\\hugoy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\obj\\",
+        "outputPath": "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

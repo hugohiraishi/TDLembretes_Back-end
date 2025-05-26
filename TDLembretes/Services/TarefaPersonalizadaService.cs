@@ -1,4 +1,8 @@
-﻿using TDLembretes.DTO;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using TDLembretes.DTO.TarefaPersonalizada;
 using TDLembretes.Models;
 using TDLembretes.Repositories;
 
@@ -8,14 +12,17 @@ namespace TDLembretes.Services
     {
 
         private readonly TarefaPersonalizadaRepository _tarefaPersonalizadaRepository;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public TarefaPersonalizadaService(TarefaPersonalizadaRepository tarefaPersonalizadaRepository)
+        public TarefaPersonalizadaService(TarefaPersonalizadaRepository tarefaPersonalizadaRepository, IHttpContextAccessor httpContextAccessor)
         {
             _tarefaPersonalizadaRepository = tarefaPersonalizadaRepository;
+            _httpContextAccessor = httpContextAccessor;
         }
+     
 
         //POST
-        public async Task<string> CriarTarefaPersonalizada(TarefaPersonalizadaDTO dto)
+        public async Task<string> CriarTarefaPersonalizada(CriarTarefaPersonalizadaDTO dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Titulo) ||
                 (string.IsNullOrWhiteSpace(dto.Descricao) ||
@@ -25,6 +32,12 @@ namespace TDLembretes.Services
                 throw new ArgumentException("Todos os campos devem ser preenchidos corretamente!");
             }
 
+            var usuarioId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(usuarioId))
+            {
+                throw new UnauthorizedAccessException("Usuário não autenticado ou sessão expirou.");
+            }
 
             TarefaPersonalizada novaTarefaPersonalizada = new TarefaPersonalizada(
                 Guid.NewGuid().ToString(),
@@ -32,8 +45,9 @@ namespace TDLembretes.Services
                 dto.Descricao,
                 DateTime.UtcNow,
                 dto.DataFinalizacao,
-                StatusTarefa.Pendente,
-                dto.Prioridade
+                StatusTarefa.EmAndamento,
+                dto.Prioridade,
+                usuarioId
                 );
 
             await _tarefaPersonalizadaRepository.AddTarefaPersonalizada(novaTarefaPersonalizada);
@@ -72,22 +86,14 @@ namespace TDLembretes.Services
 
 
         //GET
-        private async Task<TarefaPersonalizada?> GetTarefaPersonalizada(string tarefaPersonalizadaId)
+        public async Task<IEnumerable<TarefaPersonalizada>> GetTarefasPorUsuarioAsync()
         {
-            TarefaPersonalizada? tarefa = await _tarefaPersonalizadaRepository.GetTarefaPersonalizada(tarefaPersonalizadaId);
+            var usuarioId = _httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            return tarefa;
-        }
+            if (string.IsNullOrEmpty(usuarioId))
+                throw new UnauthorizedAccessException("Usuário não autenticado.");
 
-        public async Task<TarefaPersonalizada> GetTarefaPersonalizadaOrThrowException(string tarefaPersonalizadalId)
-        {
-            TarefaPersonalizada? tarefa = await GetTarefaPersonalizada(tarefaPersonalizadalId);
-            if (tarefa == null)
-            {
-                throw new Exception("Usuario não encontrado!");
-            }
-
-            return tarefa;
+            return await _tarefaPersonalizadaRepository.GetTarefasPorUsuarioAsync(usuarioId);
         }
 
 

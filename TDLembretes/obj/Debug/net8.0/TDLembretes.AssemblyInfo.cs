@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TDLembretes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa8ceee7edd7673439b9c16a82412d8466a0267a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TDLembretes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TDLembretes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

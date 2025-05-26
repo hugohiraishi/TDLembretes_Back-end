@@ -26,6 +26,10 @@ namespace TDLembretes.Repositories
         {
             return await _context.TarefasOficial.FirstOrDefaultAsync(t => t.Id == TarefaUsuarioId);
         }
+        public async Task<List<TarefaOficial>> GetTodasTarefasOficial()
+        {
+            return await _context.TarefasOficial.ToListAsync();
+        }
 
         public async Task UpdateTarefaOficial(TarefaOficial tarefa)
         {

@@ -45,17 +45,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/UsuarioRegisterDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/UsuarioRegisterDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/UsuarioRegisterDTO"
               }
             }
           }
@@ -84,10 +84,10 @@
         }
       }
     },
-    "/api/CriarTarefaOficial": {
+    "/api/Produto": {
       "get": {
         "tags": [
-          "CriarTarefaOficial"
+          "Produto"
         ],
         "responses": {
           "200": {
@@ -97,7 +97,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/TarefaOficial"
+                    "$ref": "#/components/schemas/ProdutoDTO"
                   }
                 }
               },
@@ -105,7 +105,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/TarefaOficial"
+                    "$ref": "#/components/schemas/ProdutoDTO"
                   }
                 }
               },
@@ -113,35 +113,33 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/TarefaOficial"
+                    "$ref": "#/components/schemas/ProdutoDTO"
                   }
                 }
               }
             }
           }
         }
-      }
-    },
-    "/api/CriarTarefaOficial/CriarTarefaOficial": {
+      },
       "post": {
         "tags": [
-          "CriarTarefaOficial"
+          "Produto"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaOficialDTO"
+                "$ref": "#/components/schemas/ProdutoDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaOficialDTO"
+                "$ref": "#/components/schemas/ProdutoDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaOficialDTO"
+                "$ref": "#/components/schemas/ProdutoDTO"
               }
             }
           }
@@ -170,10 +168,194 @@
         }
       }
     },
-    "/api/CriarTarefaOficial/{id}": {
+    "/api/Produto/{id}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
       "put": {
         "tags": [
-          "CriarTarefaOficial"
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TarefaOficial": {
+      "get": {
+        "tags": [
+          "TarefaOficial"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TarefaOficial"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TarefaOficial"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TarefaOficial"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TarefaOficial/CriarTarefaOficial": {
+      "post": {
+        "tags": [
+          "TarefaOficial"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarTarefaOficialDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarTarefaOficialDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarTarefaOficialDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TarefaOficial/{id}": {
+      "put": {
+        "tags": [
+          "TarefaOficial"
         ],
         "parameters": [
           {
@@ -212,7 +394,7 @@
       },
       "delete": {
         "tags": [
-          "CriarTarefaOficial"
+          "TarefaOficial"
         ],
         "parameters": [
           {
@@ -231,10 +413,61 @@
         }
       }
     },
-    "/api/CriarTarefaPersonalizada": {
+    "/ComprovaçãoURL/{id}": {
+      "put": {
+        "tags": [
+          "TarefaOficial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComprovaçãoURLDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComprovaçãoURLDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ComprovaçãoURLDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TarefaPersonalizada/{id}": {
       "get": {
         "tags": [
-          "CriarTarefaPersonalizada"
+          "TarefaPersonalizada"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -267,28 +500,36 @@
             }
           }
         }
-      }
-    },
-    "/api/CriarTarefaPersonalizada/CriarTarefaPersonalizada": {
+      },
       "post": {
         "tags": [
-          "CriarTarefaPersonalizada"
+          "TarefaPersonalizada"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaPersonalizadaDTO"
+                "$ref": "#/components/schemas/CriarTarefaPersonalizadaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaPersonalizadaDTO"
+                "$ref": "#/components/schemas/CriarTarefaPersonalizadaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TarefaPersonalizadaDTO"
+                "$ref": "#/components/schemas/CriarTarefaPersonalizadaDTO"
               }
             }
           }
@@ -315,12 +556,10 @@
             }
           }
         }
-      }
-    },
-    "/api/CriarTarefaPersonalizada/{id}": {
+      },
       "put": {
         "tags": [
-          "CriarTarefaPersonalizada"
+          "TarefaPersonalizada"
         ],
         "parameters": [
           {
@@ -359,7 +598,7 @@
       },
       "delete": {
         "tags": [
-          "CriarTarefaPersonalizada"
+          "TarefaPersonalizada"
         ],
         "parameters": [
           {
@@ -370,18 +609,6 @@
               "type": "string"
             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Ip/obter-ip": {
-      "get": {
-        "tags": [
-          "Ip"
         ],
         "responses": {
           "200": {
@@ -488,10 +715,64 @@
           }
         }
       }
+    },
+    "/api/Usuario/senha": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarSenhaUsuarioDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarSenhaUsuarioDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarSenhaUsuarioDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AtualizarSenhaUsuarioDTO": {
+        "type": "object",
+        "properties": {
+          "senhaAtual": {
+            "type": "string",
+            "nullable": true
+          },
+          "novaSenha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "AtualizarTarefaOficialDTO": {
         "type": "object",
         "properties": {
@@ -506,9 +787,8 @@
           "prioridade": {
             "$ref": "#/components/schemas/PrioridadeTarefa"
           },
-          "comprovacaoUrl": {
-            "type": "string",
-            "nullable": true
+          "status": {
+            "$ref": "#/components/schemas/StatusTarefa"
           },
           "dataFinalizacao": {
             "type": "string",
@@ -541,6 +821,62 @@
         },
         "additionalProperties": false
       },
+      "ComprovaçãoURLDTO": {
+        "type": "object",
+        "properties": {
+          "comprovacaoUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarTarefaOficialDTO": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "prioridade": {
+            "$ref": "#/components/schemas/PrioridadeTarefa"
+          },
+          "dataFinalizacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pontos": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarTarefaPersonalizadaDTO": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataFinalizacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "prioridade": {
+            "$ref": "#/components/schemas/PrioridadeTarefa"
+          }
+        },
+        "additionalProperties": false
+      },
       "PrioridadeTarefa": {
         "enum": [
           0,
@@ -549,6 +885,32 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "ProdutoDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "custoEmPontos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeDisponivel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imagemUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "SignInUsuarioDTO": {
         "type": "object",
@@ -577,8 +939,7 @@
         "enum": [
           0,
           1,
-          2,
-          3
+          2
         ],
         "type": "integer",
         "format": "int32"
@@ -617,29 +978,11 @@
             "type": "string",
             "nullable": true
           },
+          "status": {
+            "$ref": "#/components/schemas/StatusTarefa"
+          },
           "statusComprovacao": {
             "$ref": "#/components/schemas/StatusComprovacao"
-          }
-        },
-        "additionalProperties": false
-      },
-      "TarefaOficialDTO": {
-        "type": "object",
-        "properties": {
-          "titulo": {
-            "type": "string",
-            "nullable": true
-          },
-          "descricao": {
-            "type": "string",
-            "nullable": true
-          },
-          "prioridade": {
-            "$ref": "#/components/schemas/PrioridadeTarefa"
-          },
-          "dataFinalizacao": {
-            "type": "string",
-            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -650,6 +993,13 @@
           "id": {
             "type": "string",
             "nullable": true
+          },
+          "usuarioId": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
           },
           "titulo": {
             "type": "string",
@@ -669,27 +1019,6 @@
           },
           "status": {
             "$ref": "#/components/schemas/StatusTarefa"
-          },
-          "prioridade": {
-            "$ref": "#/components/schemas/PrioridadeTarefa"
-          }
-        },
-        "additionalProperties": false
-      },
-      "TarefaPersonalizadaDTO": {
-        "type": "object",
-        "properties": {
-          "titulo": {
-            "type": "string",
-            "nullable": true
-          },
-          "descricao": {
-            "type": "string",
-            "nullable": true
-          },
-          "dataFinalizacao": {
-            "type": "string",
-            "format": "date-time"
           },
           "prioridade": {
             "$ref": "#/components/schemas/PrioridadeTarefa"
@@ -727,7 +1056,7 @@
           "tarefasPersonalizadas": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/UsuarioTarefasPersonalizadas"
+              "$ref": "#/components/schemas/TarefaPersonalizada"
             },
             "nullable": true
           },
@@ -742,27 +1071,41 @@
         "additionalProperties": false
       },
       "UsuarioDTO": {
-        "required": [
-          "email",
-          "nome",
-          "senha"
-        ],
         "type": "object",
         "properties": {
           "nome": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
-          },
-          "senha": {
-            "minLength": 1,
-            "type": "string"
+            "format": "email",
+            "nullable": true
           },
           "telefone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioRegisterDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
             "type": "string",
             "nullable": true
           }
@@ -785,26 +1128,24 @@
           },
           "tarefaOficial": {
             "$ref": "#/components/schemas/TarefaOficial"
-          }
-        },
-        "additionalProperties": false
-      },
-      "UsuarioTarefasPersonalizadas": {
-        "type": "object",
-        "properties": {
-          "usuarioId": {
+          },
+          "prioridade": {
+            "$ref": "#/components/schemas/PrioridadeTarefa"
+          },
+          "dataFinalizacao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/StatusTarefa"
+          },
+          "comprovacaoUrl": {
             "type": "string",
             "nullable": true
           },
-          "usuario": {
-            "$ref": "#/components/schemas/Usuario"
-          },
-          "tarefaPersonalizadaId": {
-            "type": "string",
-            "nullable": true
-          },
-          "tarefaPersonalizada": {
-            "$ref": "#/components/schemas/TarefaPersonalizada"
+          "statusComprovacao": {
+            "$ref": "#/components/schemas/StatusComprovacao"
           }
         },
         "additionalProperties": false

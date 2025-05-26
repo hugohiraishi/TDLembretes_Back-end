@@ -23,6 +23,14 @@ namespace TDLembretes.Repositories
 
         }
 
+        public async Task<List<TarefaPersonalizada>> GetTarefasPorUsuarioAsync(string usuarioId)
+        {
+            return await _context.TarefasPersonalizada
+                .Where(t => t.UsuarioId == usuarioId)
+                .ToListAsync();
+        }
+
+
 
         public async Task<TarefaPersonalizada?> GetTarefaPersonalizada(string TarefaUsuarioId)
         {

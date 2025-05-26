@@ -1,8 +1,9 @@
 ﻿using TDLembretes.Models;
 using TDLembretes.Repositories;
-using TDLembretes.DTO;
 using System.Security.Claims;
 using System.Linq.Expressions;
+using TDLembretes.DTO.TarefaOficial;
+using TDLembretes.DTO.Produto;
 
 
 namespace TDLembretes.Services
@@ -20,7 +21,7 @@ namespace TDLembretes.Services
 
 
         //POST
-        public async Task<string> CriarTarefaOficial(TarefaOficialDTO dto)
+        public async Task<string> CriarTarefaOficial(CriarTarefaOficialDTO dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Titulo) ||
                 (string.IsNullOrWhiteSpace(dto.Descricao) ||
@@ -36,9 +37,10 @@ namespace TDLembretes.Services
                 dto.Titulo,
                 dto.Descricao,
                 dto.Prioridade,
-                0,
+                dto.Pontos,
                 DateTime.UtcNow,
                 dto.DataFinalizacao,
+                StatusTarefa.EmAndamento,
                 null,
                 StatusComprovacao.AguardandoAprovacao
 
@@ -59,14 +61,25 @@ namespace TDLembretes.Services
 
             tarefa.Titulo = dto.Titulo;
             tarefa.Descricao = dto.Descricao;
+            tarefa.Status = dto.Status;
             tarefa.Prioridade = dto.Prioridade;
-            tarefa.ComprovacaoUrl = dto.ComprovacaoUrl;
             tarefa.DataFinalizacao = dto.DataFinalizacao;
 
             await _tarefaOficialRepository.UpdateTarefaOficial(tarefa);
         }
 
+        //PUT - ComprovaçãoURL
 
+        public async Task UpdateComprovacaoURL(string id, ComprovaçãoURLDTO dto)
+        {
+            TarefaOficial? tarefa = await _tarefaOficialRepository.GetTarefaOficial(id);
+            if (tarefa == null)
+                throw new Exception("Tarefa não encontrada");
+
+            tarefa.ComprovacaoUrl = dto.ComprovacaoUrl;
+
+            await _tarefaOficialRepository.UpdateTarefaOficial(tarefa);
+        }
 
         //DELET
         public async Task DeleteTarefaOficial(string id)
@@ -80,6 +93,42 @@ namespace TDLembretes.Services
 
 
         //GET
+        public async Task<TarefaOficialDTO> GetTarefaOficialDTO(string tarefaOficialId)
+        {
+            var tarefaOficial = await GetTarefaOficialOrThrowException(tarefaOficialId);
+
+            return new TarefaOficialDTO
+            {
+                Titulo = tarefaOficial.Titulo,
+                Descricao = tarefaOficial.Descricao,
+                Prioridade = tarefaOficial.Prioridade,
+                Pontos = tarefaOficial.Pontos,
+                DataCriacao = tarefaOficial.DataCriacao,
+                DataFinalizacao = tarefaOficial.DataFinalizacao,
+                ComprovacaoUrl = tarefaOficial.ComprovacaoUrl,
+                Status = tarefaOficial.Status,
+                StatusComprovacao= tarefaOficial.StatusComprovacao,
+            };
+        }
+
+        public async Task<List<TarefaOficialDTO>> GetTodasTarefasOficial()
+        {
+            var tarefaOficial = await _tarefaOficialRepository.GetTodasTarefasOficial();
+
+            return tarefaOficial.Select(tarefaOficial => new TarefaOficialDTO
+            {
+                Titulo = tarefaOficial.Titulo,
+                Descricao = tarefaOficial.Descricao,
+                Prioridade = tarefaOficial.Prioridade,
+                Pontos = tarefaOficial.Pontos,
+                DataCriacao = tarefaOficial.DataCriacao,
+                DataFinalizacao = tarefaOficial.DataFinalizacao,
+                ComprovacaoUrl = tarefaOficial.ComprovacaoUrl,
+                Status = tarefaOficial.Status,
+                StatusComprovacao = tarefaOficial.StatusComprovacao,
+            }).ToList();
+        }
+
         private async Task<TarefaOficial?> GetTarefaOficial(string tarefaOficialId)
         {
             TarefaOficial? tarefaOficial = await _tarefaOficialRepository.GetTarefaOficial(tarefaOficialId);

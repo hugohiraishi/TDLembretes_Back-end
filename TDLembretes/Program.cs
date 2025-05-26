@@ -115,11 +115,12 @@ namespace TDLembretes
             builder.Services.AddScoped<TarefaPersonalizadaRepository>();
 
             builder.Services.AddScoped<UsuarioService>();
-            builder.Services.AddScoped < UsuarioRepository>();
+            builder.Services.AddScoped<UsuarioRepository>();
+
+            builder.Services.AddScoped<ProdutoService>();
+            builder.Services.AddScoped<ProdutoRepository>();
 
             builder.Services.AddScoped<TokenService>();
-
-            builder.Services.AddScoped<IpService>();
 
             builder.Services.AddHttpContextAccessor();
 
@@ -150,6 +151,8 @@ namespace TDLembretes
 
             SeedOnInitialize(app);
 
+            app.UseAuthentication();  
+            app.UseAuthorization();
             app.UseCors("MinhaPoliticaCors");
             app.MapControllers();
             app.MapRazorPages();

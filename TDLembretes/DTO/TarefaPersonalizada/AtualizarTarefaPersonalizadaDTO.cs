@@ -1,17 +1,14 @@
 ﻿using TDLembretes.Models;
 
-namespace TDLembretes.DTO
+namespace TDLembretes.DTO.TarefaPersonalizada
 {
-    public class AtualizarTarefaOficialDTO
+    public class AtualizarTarefaPersonalizadaDTO
     {
-            
+
         public string Titulo { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
-        public PrioridadeTarefa Prioridade { get; set; }
-        public string ComprovacaoUrl { get; set; } = string.Empty;
         public DateTime DataFinalizacao { get; set; }
-
-
-
+        public StatusTarefa Status { get; set; }
+        public PrioridadeTarefa Prioridade { get; set; }
     }
 }

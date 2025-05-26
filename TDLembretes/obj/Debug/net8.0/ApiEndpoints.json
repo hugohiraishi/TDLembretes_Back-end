@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuarioCadastroDTO",
-        "Type": "TDLembretes.DTO.UsuarioDTO",
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.Usuarios.UsuarioRegisterDTO",
         "IsRequired": true
       }
     ],
@@ -35,16 +35,125 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "TDLembretes.DTO.SignInUsuarioDTO",
+        "Type": "TDLembretes.DTO.Usuarios.SignInUsuarioDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaOficialController",
+    "ContainingType": "TDLembretes.Controllers.ProdutoController",
+    "Method": "GetTodos",
+    "RelativePath": "api/Produto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TDLembretes.DTO.Produto.ProdutoDTO, TDLembretes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.ProdutoController",
+    "Method": "Post",
+    "RelativePath": "api/Produto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.Produto.ProdutoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.ProdutoController",
+    "Method": "Get",
+    "RelativePath": "api/Produto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TDLembretes.DTO.Produto.ProdutoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.ProdutoController",
+    "Method": "Put",
+    "RelativePath": "api/Produto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.Produto.ProdutoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.ProdutoController",
+    "Method": "Delete",
+    "RelativePath": "api/Produto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.TarefaOficialController",
     "Method": "GetTarefaOficial",
-    "RelativePath": "api/CriarTarefaOficial",
+    "RelativePath": "api/TarefaOficial",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -62,9 +171,9 @@
     ]
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaOficialController",
+    "ContainingType": "TDLembretes.Controllers.TarefaOficialController",
     "Method": "UpdateTarefaOficial",
-    "RelativePath": "api/CriarTarefaOficial/{id}",
+    "RelativePath": "api/TarefaOficial/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -76,16 +185,16 @@
       },
       {
         "Name": "dto",
-        "Type": "TDLembretes.DTO.AtualizarTarefaOficialDTO",
+        "Type": "TDLembretes.DTO.TarefaOficial.AtualizarTarefaOficialDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaOficialController",
+    "ContainingType": "TDLembretes.Controllers.TarefaOficialController",
     "Method": "DeleteTarefaOficial",
-    "RelativePath": "api/CriarTarefaOficial/{id}",
+    "RelativePath": "api/TarefaOficial/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -99,16 +208,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaOficialController",
+    "ContainingType": "TDLembretes.Controllers.TarefaOficialController",
     "Method": "CriarTarefaOficial",
-    "RelativePath": "api/CriarTarefaOficial/CriarTarefaOficial",
+    "RelativePath": "api/TarefaOficial/CriarTarefaOficial",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "TDLembretes.DTO.TarefaOficialDTO",
+        "Type": "TDLembretes.DTO.TarefaOficial.CriarTarefaOficialDTO",
         "IsRequired": true
       }
     ],
@@ -125,13 +234,19 @@
     ]
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaPersonalizadaController",
-    "Method": "GetTarefaPersonalizada",
-    "RelativePath": "api/CriarTarefaPersonalizada",
+    "ContainingType": "TDLembretes.Controllers.TarefaPersonalizadaController",
+    "Method": "GetTarefasDoUsuario",
+    "RelativePath": "api/TarefaPersonalizada/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[TDLembretes.Models.TarefaPersonalizada, TDLembretes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -145,53 +260,21 @@
     ]
   },
   {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaPersonalizadaController",
-    "Method": "UpdateTarefaPersonalizada",
-    "RelativePath": "api/CriarTarefaPersonalizada/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "TDLembretes.DTO.AtualizarTarefaPersonalizadaDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaPersonalizadaController",
-    "Method": "DeleteTarefaPersonalizada",
-    "RelativePath": "api/CriarTarefaPersonalizada/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TDLembretes.Controllers.CriarTarefaPersonalizadaController",
+    "ContainingType": "TDLembretes.Controllers.TarefaPersonalizadaController",
     "Method": "CriarTarefaPersonalizada",
-    "RelativePath": "api/CriarTarefaPersonalizada/CriarTarefaPersonalizada",
+    "RelativePath": "api/TarefaPersonalizada/{id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "TDLembretes.DTO.TarefaPersonalizadaDTO",
+        "Type": "TDLembretes.DTO.TarefaPersonalizada.CriarTarefaPersonalizadaDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -208,13 +291,40 @@
     ]
   },
   {
-    "ContainingType": "TDLembretes.Controllers.IpController",
-    "Method": "ObterIp",
-    "RelativePath": "api/Ip/obter-ip",
-    "HttpMethod": "GET",
+    "ContainingType": "TDLembretes.Controllers.TarefaPersonalizadaController",
+    "Method": "UpdateTarefaPersonalizada",
+    "RelativePath": "api/TarefaPersonalizada/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.TarefaPersonalizada.AtualizarTarefaPersonalizadaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.TarefaPersonalizadaController",
+    "Method": "DeleteTarefaPersonalizada",
+    "RelativePath": "api/TarefaPersonalizada/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -268,7 +378,49 @@
       },
       {
         "Name": "dto",
-        "Type": "TDLembretes.DTO.UsuarioDTO",
+        "Type": "TDLembretes.DTO.Usuarios.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.UsuarioController",
+    "Method": "AtualizarSenha",
+    "RelativePath": "api/Usuario/senha",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.Usuarios.AtualizarSenhaUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.TarefaOficialController",
+    "Method": "UpdateComprovacaoURL",
+    "RelativePath": "Comprova\u00E7\u00E3oURL/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TDLembretes.DTO.TarefaOficial.Comprova\u00E7\u00E3oURLDTO",
         "IsRequired": true
       }
     ],

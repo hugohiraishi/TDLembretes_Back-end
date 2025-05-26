@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TDLembretes.Repositories.Data;
 
@@ -11,9 +12,11 @@ using TDLembretes.Repositories.Data;
 namespace TDLembretes.Migrations
 {
     [DbContext(typeof(tdlDbContext))]
-    partial class tdlDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250521191656_AddCamposIndividuais_UsuarioTarefaOficial")]
+    partial class AddCamposIndividuais_UsuarioTarefaOficial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,6 +79,9 @@ namespace TDLembretes.Migrations
                     b.Property<int>("Prioridade")
                         .HasColumnType("int");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.Property<int>("StatusComprovacao")
                         .HasColumnType("int");
 
@@ -113,7 +119,13 @@ namespace TDLembretes.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("TarefasPersonalizada");
                 });
@@ -155,6 +167,21 @@ namespace TDLembretes.Migrations
                     b.Property<string>("TarefaOficialId")
                         .HasColumnType("varchar(255)");
 
+                    b.Property<string>("ComprovacaoUrl")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("DataFinalizacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Prioridade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StatusComprovacao")
+                        .HasColumnType("int");
+
                     b.HasKey("UsuarioId", "TarefaOficialId");
 
                     b.HasIndex("TarefaOficialId");
@@ -162,19 +189,15 @@ namespace TDLembretes.Migrations
                     b.ToTable("UsuariosTarefasOficiais");
                 });
 
-            modelBuilder.Entity("TDLembretes.Models.UsuarioTarefasPersonalizadas", b =>
+            modelBuilder.Entity("TDLembretes.Models.TarefaPersonalizada", b =>
                 {
-                    b.Property<string>("UsuarioId")
-                        .HasColumnType("varchar(255)");
+                    b.HasOne("TDLembretes.Models.Usuario", "Usuario")
+                        .WithMany("TarefasPersonalizadas")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<string>("TarefaPersonalizadaId")
-                        .HasColumnType("varchar(255)");
-
-                    b.HasKey("UsuarioId", "TarefaPersonalizadaId");
-
-                    b.HasIndex("TarefaPersonalizadaId");
-
-                    b.ToTable("UsuariosTarefasPersonalizadas");
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("TDLembretes.Models.UsuarioTarefasOficiais", b =>
@@ -192,25 +215,6 @@ namespace TDLembretes.Migrations
                         .IsRequired();
 
                     b.Navigation("TarefaOficial");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("TDLembretes.Models.UsuarioTarefasPersonalizadas", b =>
-                {
-                    b.HasOne("TDLembretes.Models.TarefaPersonalizada", "TarefaPersonalizada")
-                        .WithMany()
-                        .HasForeignKey("TarefaPersonalizadaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TDLembretes.Models.Usuario", "Usuario")
-                        .WithMany("TarefasPersonalizadas")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("TarefaPersonalizada");
 
                     b.Navigation("Usuario");
                 });

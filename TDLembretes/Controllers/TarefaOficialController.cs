@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TDLembretes.DTO;
+using TDLembretes.DTO.Produto;
+using TDLembretes.DTO.TarefaOficial;
 using TDLembretes.Models;
 using TDLembretes.Repositories.Data;
 using TDLembretes.Services;
@@ -9,28 +10,42 @@ namespace TDLembretes.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CriarTarefaOficialController : Controller
+    public class TarefaOficialController : Controller
     {
         private readonly TarefaOficialService _tarefaOficialService;
-        private readonly tdlDbContext _context;
 
-        public CriarTarefaOficialController(TarefaOficialService tarefaOficialService, tdlDbContext context )
+        public TarefaOficialController(TarefaOficialService tarefaOficialService, tdlDbContext context )
         {
             _tarefaOficialService = tarefaOficialService;
-            _context = context;
         }
 
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TarefaOficial>>> GetTarefaOficial()
+        public async Task<ActionResult<IEnumerable<TarefaOficialDTO>>> GetTodos()
         {
-            return await _context.TarefasOficial.ToListAsync();
+            var tarefaOficial = await _tarefaOficialService.GetTodasTarefasOficial();
+            return Ok(tarefaOficial);
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TarefaOficialDTO>> Get(string id)
+        {
+            try
+            {
+                var tarefaOficial = await _tarefaOficialService.GetTarefaOficialDTO(id);
+                return Ok(tarefaOficial);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { mensagem = ex.Message });
+            }
         }
 
 
         [HttpPost("CriarTarefaOficial")]
-        public async Task<ActionResult<string>> CriarTarefaOficial(TarefaOficialDTO dto)
+        public async Task<ActionResult<string>> CriarTarefaOficial(CriarTarefaOficialDTO dto)
         {
             try
             {
@@ -57,6 +72,20 @@ namespace TDLembretes.Controllers
                 return NotFound(ex.Message);
             }
             
+        }
+
+        [HttpPut("/ComprovaçãoURL/{id}")]
+        public async Task<IActionResult> UpdateComprovacaoURL(string id, [FromBody] ComprovaçãoURLDTO dto)
+        {
+            try
+            {
+                await _tarefaOficialService.UpdateComprovacaoURL(id, dto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
 

@@ -46,7 +46,6 @@ namespace TDLembretes.Services
                 senha,
                 0,
                 telefone,
-                new List<UsuarioTarefasPersonalizadas>(),
                 new List<UsuarioTarefasOficiais>()
                 );
 

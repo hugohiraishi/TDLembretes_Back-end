@@ -1,4 +1,4 @@
-﻿namespace TDLembretes.DTO
+﻿namespace TDLembretes.DTO.Usuarios
 {
     public class SignInUsuarioDTO
     {

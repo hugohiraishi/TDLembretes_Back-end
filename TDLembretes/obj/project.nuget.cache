@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ylu+X8q+KdM=",
+  "dgSpecHash": "aCxJmUBun0I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hugoy\\OneDrive\\Área de Trabalho\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
+  "projectFilePath": "C:\\Users\\hugoy\\source\\repos\\TDLembretes\\TDLembretes\\TDLembretes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hugoy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hugoy\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

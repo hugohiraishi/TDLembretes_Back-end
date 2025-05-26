@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TDLembretes.DTO;
+using System.Security.Claims;
+using TDLembretes.DTO.TarefaPersonalizada;
 using TDLembretes.Models;
 using TDLembretes.Repositories.Data;
 using TDLembretes.Services;
@@ -9,26 +11,33 @@ namespace TDLembretes.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CriarTarefaPersonalizadaController : Controller
+    public class TarefaPersonalizadaController : Controller
     {
         private readonly TarefaPersonalizadaService _tarefaPersonalizadaService;
-        private readonly tdlDbContext _context;
 
-        public CriarTarefaPersonalizadaController(TarefaPersonalizadaService tarefaPersonalizadaService, tdlDbContext context)
+        public TarefaPersonalizadaController(TarefaPersonalizadaService tarefaPersonalizadaService)
         {
             _tarefaPersonalizadaService = tarefaPersonalizadaService;
-            _context = context;
         }
 
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TarefaPersonalizada>>> GetTarefaPersonalizada()
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<TarefaPersonalizada>>> GetTarefasDoUsuario()
         {
-            return await _context.TarefasPersonalizada.ToListAsync();
+            try
+            {
+                var tarefas = await _tarefaPersonalizadaService.GetTarefasPorUsuarioAsync();
+                return Ok(tarefas);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
 
-        [HttpPost("CriarTarefaPersonalizada")]
-        public async Task<ActionResult<string>> CriarTarefaPersonalizada(TarefaPersonalizadaDTO dto)
+
+        [HttpPost("{id}")]
+        public async Task<ActionResult<string>> CriarTarefaPersonalizada(CriarTarefaPersonalizadaDTO dto)
         {
             try
             {

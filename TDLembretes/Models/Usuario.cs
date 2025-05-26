@@ -8,12 +8,13 @@
         public string Senha { get; set; }
         public int Pontos { get; set; } = 0;
         public string Telefone { get; set; }
-        public List<UsuarioTarefasPersonalizadas> TarefasPersonalizadas { get; set; } = new();
+        public ICollection<TarefaPersonalizada> TarefasPersonalizadas { get; set; }
+
         public List<UsuarioTarefasOficiais> TarefasOficiais { get; set; } = new();
 
         private Usuario() { }
 
-        public Usuario (string id, string nome, string email, string senha, int pontos, string telefone, List<UsuarioTarefasPersonalizadas> tarefasPersonalizadas, List<UsuarioTarefasOficiais> tarefasOficiais)
+        public Usuario (string id, string nome, string email, string senha, int pontos, string telefone, List<UsuarioTarefasOficiais> tarefasOficiais)
         {
             Id = id;
             Nome = nome;
@@ -21,7 +22,6 @@
             Senha = senha;
             Pontos = pontos;
             Telefone = telefone;
-            TarefasPersonalizadas = tarefasPersonalizadas;
             TarefasOficiais = tarefasOficiais;
         }
     }

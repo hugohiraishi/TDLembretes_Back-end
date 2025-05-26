@@ -10,7 +10,6 @@ namespace TDLembretes.Repositories.Data
         public DbSet<TarefaPersonalizada> TarefasPersonalizada { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<UsuarioTarefasOficiais> UsuariosTarefasOficiais { get; set; }
-        public DbSet<UsuarioTarefasPersonalizadas> UsuariosTarefasPersonalizadas { get; set; }
 
         public tdlDbContext()
         {
@@ -38,8 +37,16 @@ namespace TDLembretes.Repositories.Data
 
             modelBuilder.Entity<TarefaPersonalizada>()
                 .HasKey(t => t.Id);
+
             modelBuilder.Entity<TarefaPersonalizada>()
                 .Property(t => t.Id);
+
+            modelBuilder.Entity<TarefaPersonalizada>()
+                .HasOne(tp => tp.Usuario)
+                .WithMany(u => u.TarefasPersonalizadas)
+                .HasForeignKey(tp => tp.UsuarioId)
+                .OnDelete(DeleteBehavior.Cascade);
+
 
             modelBuilder.Entity<Usuario>()
                 .HasKey(u => u.Id);
@@ -59,18 +66,6 @@ namespace TDLembretes.Repositories.Data
                 .WithMany()
                 .HasForeignKey(x => x.TarefaOficialId);
 
-            modelBuilder.Entity<UsuarioTarefasPersonalizadas>()
-                .HasKey(x => new { x.UsuarioId, x.TarefaPersonalizadaId });
-
-            modelBuilder.Entity<UsuarioTarefasPersonalizadas>()
-                .HasOne(x => x.Usuario)
-                .WithMany(u => u.TarefasPersonalizadas)
-                .HasForeignKey(x => x.UsuarioId);
-
-            modelBuilder.Entity<UsuarioTarefasPersonalizadas>()
-                .HasOne(x => x.TarefaPersonalizada)
-                .WithMany()
-                .HasForeignKey(x => x.TarefaPersonalizadaId);
 
 
             OnModelCreatingPartial(modelBuilder);

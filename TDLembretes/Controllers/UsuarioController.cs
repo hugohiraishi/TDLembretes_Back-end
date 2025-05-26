@@ -4,8 +4,9 @@ using TDLembretes.Repositories.Data;
 using TDLembretes.Models;
 using TDLembretes.Services;
 using System.Security.Cryptography.X509Certificates;
-using TDLembretes.DTO;
 using Microsoft.Extensions.FileProviders;
+using TDLembretes.DTO.Usuarios;
+using TDLembretes.DTO.Produto;
 
 namespace TDLembretes.Controllers
 {
@@ -14,21 +15,33 @@ namespace TDLembretes.Controllers
 
     public class UsuarioController : ControllerBase
     {
-        private readonly tdlDbContext _context;
         private readonly UsuarioService _usuarioService;
 
         public UsuarioController(tdlDbContext context, UsuarioService usuarioService)
         {
-            _context = context;
             _usuarioService = usuarioService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<UsuarioDTO>>> GetTodos()
         {
-            return await _context.Usuarios.ToListAsync();
+            var produtos = await _usuarioService.GetTodosUsuarios();
+            return Ok(produtos);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<UsuarioDTO>> Get(string id)
+        {
+            try
+            {
+                var usuario = await _usuarioService.GetUsuarioDTO(id);
+                return Ok(usuario);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { mensagem = ex.Message });
+            }
+        }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeletarUsuario(string id)
@@ -43,6 +56,20 @@ namespace TDLembretes.Controllers
                 return NotFound(ex.Message);
             }
 
+        }
+
+        [HttpPut("senha")]
+        public async Task<ActionResult> AtualizarSenha(string id, [FromBody] AtualizarSenhaUsuarioDTO dto)
+        {
+            try
+            {
+                await _usuarioService.AtualizarSenha(id, dto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
