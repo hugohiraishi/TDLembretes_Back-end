@@ -59,6 +59,20 @@ namespace TDLembretes.Controllers
             return NoContent();
         }
 
+        [HttpPut("{id}/status")]
+        public async Task<IActionResult> UpdateStatus(string id, [FromBody] AtualizarStatusPersonalizadaDTO dto)
+        {
+            try
+            {
+                await _tarefaPersonalizadaService.UpdateStatusTarefaPersonalizada(id, dto);
+                return NoContent(); 
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTarefaPersonalizada(string id)

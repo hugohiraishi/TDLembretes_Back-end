@@ -120,6 +120,11 @@ namespace TDLembretes
             builder.Services.AddScoped<ProdutoService>();
             builder.Services.AddScoped<ProdutoRepository>();
 
+            builder.Services.AddScoped<UsuarioTarefasOficialRepository>();
+            builder.Services.AddScoped<UsuarioTarefasOficialService>();
+
+            builder.Services.AddScoped<CompraService>();
+
             builder.Services.AddScoped<TokenService>();
 
             builder.Services.AddHttpContextAccessor();

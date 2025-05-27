@@ -12,8 +12,8 @@ using TDLembretes.Repositories.Data;
 namespace TDLembretes.Migrations
 {
     [DbContext(typeof(tdlDbContext))]
-    [Migration("20250521191656_AddCamposIndividuais_UsuarioTarefaOficial")]
-    partial class AddCamposIndividuais_UsuarioTarefaOficial
+    [Migration("20250527031505_Teste")]
+    partial class Teste
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

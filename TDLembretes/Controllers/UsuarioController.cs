@@ -13,11 +13,11 @@ namespace TDLembretes.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    public class UsuarioController : ControllerBase
+    public class UsuarioController : Controller
     {
         private readonly UsuarioService _usuarioService;
 
-        public UsuarioController(tdlDbContext context, UsuarioService usuarioService)
+        public UsuarioController(UsuarioService usuarioService)
         {
             _usuarioService = usuarioService;
         }

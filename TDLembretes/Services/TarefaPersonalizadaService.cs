@@ -67,7 +67,26 @@ namespace TDLembretes.Services
             tarefa.Descricao = dto.Descricao;
             tarefa.Prioridade = dto.Prioridade;
             tarefa.DataFinalizacao = dto.DataFinalizacao;
-            tarefa.Status = dto.Status;
+
+            await _tarefaPersonalizadaRepository.UpdateTarefaPersonalizada(tarefa);
+        }
+
+        public async Task UpdateStatusTarefaPersonalizada(string id, AtualizarStatusPersonalizadaDTO statusDto)
+        {
+            TarefaPersonalizada? tarefa = await _tarefaPersonalizadaRepository.GetTarefaPersonalizada(id);
+            if (tarefa == null)
+                throw new Exception("Tarefa não encontrada.");
+
+            if (DateTime.UtcNow > tarefa.DataFinalizacao)
+            {
+                tarefa.Status = StatusTarefa.Expirada;
+            }
+            else
+            {
+                tarefa.Status = statusDto.Status == StatusTarefa.Concluida
+                                ? StatusTarefa.Concluida
+                                : StatusTarefa.EmAndamento;
+            }
 
             await _tarefaPersonalizadaRepository.UpdateTarefaPersonalizada(tarefa);
         }

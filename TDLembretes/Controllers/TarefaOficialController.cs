@@ -74,20 +74,6 @@ namespace TDLembretes.Controllers
             
         }
 
-        [HttpPut("/ComprovaçãoURL/{id}")]
-        public async Task<IActionResult> UpdateComprovacaoURL(string id, [FromBody] ComprovaçãoURLDTO dto)
-        {
-            try
-            {
-                await _tarefaOficialService.UpdateComprovacaoURL(id, dto);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTarefaOficial(string id)

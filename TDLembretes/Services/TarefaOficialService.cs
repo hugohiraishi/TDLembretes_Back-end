@@ -61,25 +61,12 @@ namespace TDLembretes.Services
 
             tarefa.Titulo = dto.Titulo;
             tarefa.Descricao = dto.Descricao;
-            tarefa.Status = dto.Status;
             tarefa.Prioridade = dto.Prioridade;
             tarefa.DataFinalizacao = dto.DataFinalizacao;
 
             await _tarefaOficialRepository.UpdateTarefaOficial(tarefa);
         }
-
-        //PUT - ComprovaçãoURL
-
-        public async Task UpdateComprovacaoURL(string id, ComprovaçãoURLDTO dto)
-        {
-            TarefaOficial? tarefa = await _tarefaOficialRepository.GetTarefaOficial(id);
-            if (tarefa == null)
-                throw new Exception("Tarefa não encontrada");
-
-            tarefa.ComprovacaoUrl = dto.ComprovacaoUrl;
-
-            await _tarefaOficialRepository.UpdateTarefaOficial(tarefa);
-        }
+     
 
         //DELET
         public async Task DeleteTarefaOficial(string id)

@@ -48,6 +48,22 @@ namespace TDLembretes.Services
             await _usuarioRepository.AtualizarUsuario(usuario);
         }
 
+        private async Task UpdateUsuario(Usuario usuario)
+        {
+            await _usuarioRepository.AtualizarUsuario(usuario);
+        }
+
+        public async Task UpdateUsuarioOrThrowException(Usuario usuario)
+        {
+            var existingUsuario = await _usuarioRepository.GetUsuario(usuario.Id);
+            if (existingUsuario == null)
+                throw new Exception("Usuário não encontrado!");
+
+            await UpdateUsuario(usuario);
+        }
+
+
+
         //DELET
         public async Task DeletarUsuario(string id)
         {
@@ -102,6 +118,7 @@ namespace TDLembretes.Services
 
             return usuario;
         }
+
 
     }
 }

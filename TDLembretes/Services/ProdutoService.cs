@@ -56,6 +56,19 @@ namespace TDLembretes.Services
             await _produtoRepository.UpdateProduto(produto);
         }
 
+        private async Task UpdateProduto(Produto produto)
+        {
+            await _produtoRepository.UpdateProduto(produto);
+        }
+
+        public async Task UpdateProdutoOrThrowException(Produto produto)
+        {
+            var existingProduto = await _produtoRepository.GetProdutos(produto.Id);
+            if (existingProduto == null)
+                throw new Exception("Produto não encontrado!");
+
+            await UpdateProduto(produto);
+        }
 
         //DELET
         public async Task DeleteProduto(string id)
