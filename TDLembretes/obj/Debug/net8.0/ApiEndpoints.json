@@ -611,6 +611,27 @@
   },
   {
     "ContainingType": "TDLembretes.Controllers.UsuarioTarefasOficialController",
+    "Method": "RemoverTarefa",
+    "RelativePath": "api/UsuarioTarefasOficial/usuario/{usuarioId}/tarefa/{tarefaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "tarefaId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDLembretes.Controllers.UsuarioTarefasOficialController",
     "Method": "GetTarefaDoUsuario",
     "RelativePath": "api/UsuarioTarefasOficial/usuario/{usuarioId}/tarefa/{tarefaId}",
     "HttpMethod": "GET",

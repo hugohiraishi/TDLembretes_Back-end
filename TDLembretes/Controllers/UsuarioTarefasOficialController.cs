@@ -74,6 +74,19 @@ namespace TDLembretes.Controllers
             }
         }
 
+        [HttpDelete("usuario/{usuarioId}/tarefa/{tarefaId}")]
+        public async Task<IActionResult> RemoverTarefa(string usuarioId, string tarefaId)
+        {
+            try
+            {
+                await _usuarioTarefasOficialService.RemoverTarefaAsync(usuarioId, tarefaId);
+                return Ok("Tarefa removida com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
 
         [HttpGet("usuario/{usuarioId}")]
         public async Task<IActionResult> GetTarefasDoUsuario(string usuarioId)

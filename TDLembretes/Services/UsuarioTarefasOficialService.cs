@@ -14,7 +14,7 @@ namespace TDLembretes.Services
             _usuarioTarefasOficialRepository = usuarioTarefasOficiaisRepository;
         }
 
-
+        //"puxar a tarefa para a lista
         public async Task AdotarTarefaAsync(string usuarioId, string tarefaOficialId)
         {
             TarefaOficial? tarefa = await _usuarioTarefasOficialRepository.GetTarefaOficialAsync(tarefaOficialId);
@@ -81,6 +81,16 @@ namespace TDLembretes.Services
             tarefaUsuario.ComprovacaoUrl = dto.ComprovacaoUrl;
 
             await _usuarioTarefasOficialRepository.UpdateAsync(tarefaUsuario);
+        }
+
+        //Remover tarefa da lista do usuário
+        public async Task RemoverTarefaAsync(string usuarioId, string tarefaOficialId)
+        {
+            var tarefaUsuario = await _usuarioTarefasOficialRepository.GetByUsuarioETarefaAsync(usuarioId, tarefaOficialId);
+            if (tarefaUsuario == null)
+                throw new Exception("Tarefa não encontrada na lista do usuário.");
+
+            await _usuarioTarefasOficialRepository.DeleteAsync(tarefaUsuario);
         }
 
 

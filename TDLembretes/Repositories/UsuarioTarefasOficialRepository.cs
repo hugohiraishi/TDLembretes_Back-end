@@ -50,11 +50,13 @@ namespace TDLembretes.Repositories
             await _context.SaveChangesAsync();
         }
 
+
         public async Task<UsuarioTarefasOficiais?> GetByUsuarioETarefaAsync(string usuarioId, string tarefaOficialId)
         {
             return await _context.UsuariosTarefasOficiais
                 .FirstOrDefaultAsync(x => x.UsuarioId == usuarioId && x.TarefaOficialId == tarefaOficialId);
         }
+
 
         public async Task<List<UsuarioTarefasOficiais>> GetByUsuarioAsync(string usuarioId)
         {
