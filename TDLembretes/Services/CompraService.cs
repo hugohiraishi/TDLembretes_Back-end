@@ -19,6 +19,12 @@
             if (usuario == null || produto == null)
                 throw new Exception("Usuário ou produto não encontrado.");
 
+            if (produto.QuantidadeDisponivel <= 0)
+                throw new Exception("Produto esgotado.");
+
+            if (produto.QuantidadeDisponivel < quantidade)
+                throw new Exception("Quantidade solicitada maior do que a disponível.");
+
             int custoTotal = produto.CustoEmPontos * quantidade;
 
             if (usuario.Pontos < custoTotal)
@@ -32,6 +38,7 @@
 
             return true;
         }
+
     }
 
 }
